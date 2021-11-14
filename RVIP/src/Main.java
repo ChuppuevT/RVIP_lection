@@ -45,21 +45,21 @@ public class Main {
 
             while (true) {
                 leftchopstick.grab();
-                System.out.println("философ " + (number+1) + " взял левую палочку.");
+                System.out.println("С„РёР»РѕСЃРѕС„ " + (number+1) + " РІР·СЏР» Р»РµРІСѓСЋ РїР°Р»РѕС‡РєСѓ.");
                 rightchopstick.grab();
-                System.out.println("философ " + (number+1) + " взял правую палочку.");
+                System.out.println("С„РёР»РѕСЃРѕС„ " + (number+1) + " РІР·СЏР» РїСЂР°РІСѓСЋ РїР°Р»РѕС‡РєСѓ.");
                 eat();
                 leftchopstick.release();
-                System.out.println("философ " + (number+1) + " использовал левую палочку.");
+                System.out.println("С„РёР»РѕСЃРѕС„ " + (number+1) + " РёСЃРїРѕР»СЊР·РѕРІР°Р» Р»РµРІСѓСЋ РїР°Р»РѕС‡РєСѓ.");
                 rightchopstick.release();
-                System.out.println("философ " + (number+1) + " использовал правую палочку.");
+                System.out.println("С„РёР»РѕСЃРѕС„ " + (number+1) + " РёСЃРїРѕР»СЊР·РѕРІР°Р» РїСЂР°РІСѓСЋ РїР°Р»РѕС‡РєСѓ.");
             }
         }
 
         void eat() {
             try {
                 int sleepTime = ThreadLocalRandom.current().nextInt(0, 1000);
-                System.out.println("философ " + (number+1) + " ест за " + sleepTime);
+                System.out.println("С„РёР»РѕСЃРѕС„ " + (number+1) + " РµСЃС‚ Р·Р° " + sleepTime);
                 Thread.sleep(sleepTime);
             }
             catch (Exception e) {
@@ -92,7 +92,7 @@ public class Main {
                 }
                 if (deadlock) {
                     Thread.sleep(1000);
-                    System.out.println("каждый ест");
+                    System.out.println("РєР°Р¶РґС‹Р№ РµСЃС‚");
                     break;
                 }
             }
