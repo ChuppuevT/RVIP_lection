@@ -47,7 +47,7 @@ public class Main {
                 leftchopstick.grab();
                 System.out.println("философ " + (number+1) + " взял левую палочку.");
                 rightchopstick.grab();
-                System.out.println("философ " + (number+1) + " взял правую палочку.");
+                System.out.println("философ " + (number+1) + " взял правую палочкуу.");
                 eat();
                 leftchopstick.release();
                 System.out.println("философ " + (number+1) + " использовал левую палочку.");
